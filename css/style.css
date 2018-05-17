@@ -1,0 +1,70 @@
+html, body, p, ul {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #d3a91f; }
+
+header {
+  padding: 40px 0 20px;
+  width: 90%;
+  margin: 0 auto; }
+
+ul {
+  list-style: none; }
+  ul li {
+    margin: 0;
+    display: inline;
+    background: #d3a91f;
+    padding: 5px 10px; }
+    ul li:hover {
+      transition: 1s;
+      background: #141212; }
+      ul li:hover:nth-child(1) {
+        background: red; }
+      ul li:hover:nth-child(2) {
+        background: blue; }
+      ul li:hover:nth-child(3) {
+        background: lightcoral; }
+      ul li:hover:nth-child(4) {
+        background: lightseagreen; }
+      ul li:hover:nth-child(5) {
+        background: lightgoldenrodyellow; }
+      ul li:hover:nth-child(6) {
+        background: darkmagenta; }
+    ul li a {
+      text-decoration: none;
+      color: #141212; }
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  background: #d3a91f;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; }
+  main article {
+    background: #797979;
+    color: #141212;
+    padding: 10px; }
+    main article::first-letter {
+      font-size: 150%; }
+    main article:first-child {
+      background: white; }
+    main article:last-child {
+      background: white; }
+    main article:nth-child(4n+1) {
+      grid-column: span 1; }
+    main article:nth-child(4n+2) {
+      grid-column: span 3;
+      color: #d3a91f; }
+    main article:nth-child(4n+3) {
+      grid-column: span 3;
+      color: #d3a91f; }
+    main article:nth-child(4n+4) {
+      grid-column: span 1; }
+    main article blockquote:before {
+      content: open-quote; }
+    main article blockquote:after {
+      content: close-quote; }
